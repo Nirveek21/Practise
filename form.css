@@ -1,0 +1,103 @@
+body{
+    
+    background-image: url("https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+}
+#div1{
+  text-align: center;
+  background-color: rgb(194, 255, 159);
+  width: 40%;
+  /*border: 5px solid green;*/
+  padding: 1px;
+  margin: auto;
+  border-radius: 40px;
+}
+
+.topnav {
+    background-color:greenyellow;
+    overflow: hidden;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 14px;
+    font-size: 16px;
+    font-family: cursive;
+    font-style: normal;
+  }
+  
+ 
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  
+  .topnav a.active {
+    background-color: rgb(19, 129, 46);
+    color: white;
+  }
+  .info{
+      text-align: center;
+      color: white;
+  }
+  input[type=text], select {
+    width: auto;
+    padding: 10px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: content-box;
+  }
+  input[type=date], select {
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: content-box;
+  }
+  input[type=email], select {
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: content-box;
+  }
+  input[type=tel], select {
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: content-box;
+  }
+  input[type=submit] {
+    width: auto;
+    background-color: #1fb322;
+    color: white;
+    padding: 10px 5px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #057e0b;
+  }
+  label[for=fname], select{
+   font-size: 20px;
+   font-family: cursive;
+  }
