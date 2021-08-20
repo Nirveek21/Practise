@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="form.css" />
 
-    <title>Login</title>
+  <title>Login</title>
 </head>
 <body>
-    <div class="topnav">
-        <a  href="C:\Users\Nirveek\OneDrive\Desktop\Webpage\Homepage.html">HOME</a>
-        <a href="">NEWS</a>
-        <a class="active" href="">LOGIN</a>
-        <a href="">ABOUT</a>
-      </div>
-<div class="m2">
-    <H1>Signup</H1>
-    <div id="div1" > <form>
-
-
-        <label for="fname">Full Name:</label>  <input type="text" placeholder="Full Name" ><br>
-        <label for="fname">Date Of Birth:</label> <input type="date"><br>
-        <label for="fname">Email Address:</label><input type="email" placeholder="Email Address" ><br>
-        <label for="fname">Phone number:</label> <input type="tel" placeholder="mobile No." > <br>
-        <input type="submit" value="SUBMIT" >
-        </form>
+  <div class="m2">
+    <h1>Signup</h1>
+    <div id="div1">
+      <form action="" method="GET">
+        <label for="fname" id="i2" class="c1">Full Name:</label>
+        <input
+          type="text"
+          id="fna"
+          placeholder="Full Name"
+          class="c1"
+          value=""
+        />
+        <a id="a">*Cannot be empty</a>
+        <br />
+        <label for="dt" class="c1">Date Of Birth:</label>
+        <input type="date" value="" id="dob" /><a id="a1">*Cannot be empty</a
+        ><br />
+        <label for="email" class="c1">Email Address:</label
+        ><input
+          type="email"
+          placeholder="Email Address"
+          class="c1"
+          value=""
+          id="ema"
+        /><a id="a2">*Cannot be empty</a><br />
+        <label for="ph" class="c1">Phone number:</label>
+        <input
+          type="tel"
+          placeholder="mobile No."
+          class="c1"
+          value=""
+          id="mob"
+        />
+        <a id="a3">*Cannot be empty</a>
+        <a id="a4">*Not valid number</a><br />
+        <input
+          type="submit"
+          onclick="return checkforblank()"
+          value="SUBMIT"
+          class="c1"
+          value=""
+        />
+      </form>
     </div>
-</div>
+  </div>
+  <script src="form.js"></script>
 </body>
