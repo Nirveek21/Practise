@@ -19,37 +19,6 @@ h1 {
   border-radius: 10px;
 }
 
-.topnav {
-  background-color: greenyellow;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
-.topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 14px 14px;
-  font-size: 16px;
-  font-family: cursive;
-  font-style: normal;
-}
-
-.topnav a:hover {
-  background-color: white;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: rgb(19, 129, 46);
-  color: white;
-}
-.info {
-  text-align: center;
-  color: white;
-}
 #a,
 #a2,
 #a3,
