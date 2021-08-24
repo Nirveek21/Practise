@@ -10,3 +10,7 @@ body {
   text-align: right;
   padding-right: 70px;
 }
+img {
+  height: 110px;
+  width: 200px;
+}

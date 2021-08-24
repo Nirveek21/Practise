@@ -16,55 +16,93 @@
   </head>
 
   <body>
-    <div class="container">
-      <table class="table table-dark table-hover">
-        <thead>
-          <tr>
-            <th scope="col">index</th>
-            <th scope="col">PRODUCT</th>
-            <th scope="col">QUANTITY</th>
-            <th scope="col">PRICE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>SOAP (Rs.30)</td>
-            <td id="Q1">
-              <button id="a1">+</button>
-              <p id="pa1">0</p>
-              <button id="s1">-</button>
-            </td>
-            <td id="P1">Rs.0</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>SNACK (Rs.15)</td>
-            <td id="Q2">
-              <button id="a2">+</button>
-              <p id="pa2">0</p>
-              <button id="s2">-</button>
-            </td>
+    <h1 id="h1">PLACE ORDER</h1>
 
-            <td id="P2">Rs.0</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>CHIPS (Rs.10)</td>
-            <td id="Q3">
-              <button id="a3">+</button>
-              <p id="pa3">0</p>
-              <button id="s3">-</button>
-            </td>
-            <td id="P3">Rs.0</td>
-          </tr>
-          <tr>
-            <th scope="row">Subtotal :</th>
-            <td colspan="3" id="T">Rs. 0</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="container c">
+      <div class="shadow-lg p-3 mb-5 bg-white rounded">
+        <table class="table table-hover table-borderless">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col" colspan="2">PRODUCT</th>
+              <th scope="col">QUANTITY</th>
+              <th scope="col">PRICE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <img
+                  src="https://www.byrdie.com/thmb/VOMVh59AHtAL3_57hP5olvX5rAg=/fit-in/1233x932/filters:no_upscale():max_bytes(150000):strip_icc()/AllTerrainDitchTheItchBarSoap-97a10d60a40c40388a40dc85f1aa959d.jpg"
+                  alt=""
+                />
+              </th>
+              <td>SOAP (Rs.30)</td>
+              <td id="Q1">
+                <button type="button" class="btn btn-secondary" id="a1">
+                  +
+                </button>
+                <p id="pa1">0</p>
+                <button type="button" class="btn btn-secondary" id="s1">
+                  -
+                </button>
+              </td>
+              <td id="P1">Rs.0</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <img
+                  src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2015%2F07%2F12214516%2F43MHNoNDE6I5UWEiRdI-0QmrOQvkmrrn.png&q=85"
+                  alt=""
+                />
+              </th>
+              <td>SNACK (Rs.15)</td>
+              <td id="Q2">
+                <button type="button" class="btn btn-secondary" id="a2">
+                  +
+                </button>
+                <p id="pa2">0</p>
+                <button type="button" class="btn btn-secondary" id="s2">
+                  -
+                </button>
+              </td>
+
+              <td id="P2">Rs.0</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <img
+                  src="https://health.clevelandclinic.org/wp-content/uploads/sites/3/2016/05/worstSnacks-527905022-770x533-1.jpg"
+                  alt=""
+                />
+              </th>
+              <td>CHIPS (Rs.10)</td>
+              <td id="Q3">
+                <button type="button" class="btn btn-secondary" id="a3">
+                  +
+                </button>
+                <p id="pa3">0</p>
+                <button type="button" class="btn btn-secondary" id="s3">
+                  -
+                </button>
+              </td>
+              <td id="P3">Rs.0</td>
+            </tr>
+            <tr>
+              <th scope="row">Subtotal :</th>
+              <td colspan="3" id="T">Rs. 0</td>
+            </tr>
+            <tr>
+              <th scope="row" colspan="4">
+                <button type="button" class="btn btn-primary btn-lg">
+                  BUY NOW
+                </button>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+
     <script>
       var quant1 = 0;
       var quant2 = 0;
