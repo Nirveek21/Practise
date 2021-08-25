@@ -21,3 +21,6 @@ img {
   padding-bottom: 1rem;
   border-radius: 0.85rem !important;
 }
+.modal {
+  white-space: pre-line;
+}

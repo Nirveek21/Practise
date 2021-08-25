@@ -18,7 +18,7 @@
   <body>
     <h1 id="h1">PLACE ORDER</h1>
 
-    <div class="container c">
+    <div class="container c" action="" method="GET" target=" _blank">
       <div class="shadow-lg mb-5 bg-white">
         <table class="table table-hover table-borderless">
           <thead class="table-dark">
@@ -41,7 +41,7 @@
                 <button type="button" class="btn bta btn-secondary" id="a1">
                   +
                 </button>
-                <p id="pa1">0</p>
+                <p id="pa1" name="quantity">0</p>
                 <button type="button" class="btn bt btn-secondary" id="s1">
                   -
                 </button>
@@ -93,16 +93,53 @@
             </tr>
             <tr>
               <th scope="row" colspan="4">
-                <button type="button" class="btn btn-primary btn-lg">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
                   BUY NOW
                 </button>
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          ORDER CONFIRMED
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">...</div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Done.
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </th>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-
     <script>
       var quant1 = 0;
       var quant2 = 0;
@@ -161,6 +198,43 @@
           $("#T").text("Rs. " + total);
         }
       });
+      $(".btn-lg").click(function () {
+        /*console.log("Soap X " + quant1 + " = Rs." + quant1 * price1);
+        console.log("Snack X " + quant2 + " = Rs." + quant2 * price2);
+        console.log("Chips X " + quant3 + " = Rs." + quant3 * price3);
+
+        console.log(total);
+        alert("Total Amount = Rs." + total);*/
+        $(".modal-body").text(
+          "Soap X " +
+            quant1 +
+            " = Rs." +
+            quant1 * price1 +
+            "\n" +
+            "Snack X " +
+            quant2 +
+            " = Rs." +
+            quant2 * price2 +
+            "\n" +
+            "Chips X " +
+            quant3 +
+            " = Rs." +
+            quant3 * price3 +
+            "\n" +
+            "Total Amount = Rs." +
+            total
+        );
+      });
+      /* $(document).ready(function () {
+        ord = new Object();
+        ord.o1 = quant1;
+        ord.o2 = quant2;
+        ord.o3 = quant3;
+        ord.total = total;
+        $(".btn-lg").click(function () {
+          $("#d5").text($.param(ord));
+        });
+      });*/
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
