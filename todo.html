@@ -56,7 +56,9 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body"><input type="text" /></div>
+                  <div class="modal-body">
+                    <input type="text" id="inp" name="t" value="" />
+                  </div>
                   <div class="modal-footer">
                     <button
                       type="button"
@@ -65,7 +67,7 @@
                     >
                       Close
                     </button>
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" class="btn btn-primary" id="input">
                       Save changes
                     </button>
                   </div>
@@ -79,15 +81,20 @@
     <script>
       var n = 1;
       function task(tsk) {
-        var newtask = `<tr>
+        var newtask = `<tr >
             <th>${n}</th>
             <td colspan="2"></td>
             <td>
-              <button type="button" class="btn btn-success">Success</button>
+
+              <button type="button" class="btn btn-success" >DONE</button>
+              <button type="button" class="btn btn-danger" id=${n} onclick="remove(this)">REMOVE TASK</button>
             </td>
           </tr>`;
         $("#bdy").append(newtask);
         n++;
+      }
+      function remove(rem) {
+        $(rem).parent().parent().remove();
       }
     </script>
     <script
