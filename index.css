@@ -22,5 +22,5 @@ img {
   border-radius: 0.85rem !important;
 }
 .modal {
-  white-space: pre-line;
+  word-break: break-all;
 }
